@@ -5,8 +5,30 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: () => import('/src/layout/index.vue')
+      name: 'layout',
+      component: () => import('/src/layout/index.vue'),
+      children: [
+        {
+          path: 'table',
+          name: 'table',
+          component: () => import('/src/views/table.vue'),
+        },
+        {
+          path: 'search',
+          name: 'search',
+          component: () => import('/src/views/search.vue'),
+        },
+        {
+          path: 'search2',
+          name: 'search2',
+          component: () => import('/src/views/search2.vue'),
+        },
+        {
+          path: 'work',
+          name: 'work',
+          component: () => import('/src/views/work.vue'),
+        },
+      ]
     },
   ]
 })
