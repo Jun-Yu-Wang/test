@@ -1,0 +1,188 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+td {
+	font-size: 13px;
+	font-family: "Arial", "Helvetica", "sans-serif";
+	font-size: 13px;
+	letter-spacing: 1px;
+	line-height: 20px;
+	color: #333333;
+}
+
+;
+
+.a01 {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 13px
+}
+
+.a01:link {
+	text-decoration: underline;
+	color: #ffffff
+}
+
+.a01:visited {
+	text-decoration: underline;
+	color: #ffffff
+}
+
+.a01:active {
+	text-decoration: none;
+	color: #ffffff
+}
+
+.a01:hover {
+	text-decoration: none;
+	color: #ffffff
+}
+
+.a02 {
+	text-decoration: none;
+	color: #666666;
+	font-size: 13px
+}
+
+.a02:link {
+	text-decoration: underline;
+	color: #666666
+}
+
+.a02:visited {
+	text-decoration: underline;
+	color: #666666
+}
+
+.a02:active {
+	text-decoration: none;
+	color: #0099ff
+}
+
+.a02:hover {
+	text-decoration: none;
+	color: #0099ff
+}
+
+.a03 {
+	text-decoration: none;
+	color: #990000
+}
+
+.a03:link {
+	text-decoration: none;
+	color: #990000
+}
+
+.a03:visited {
+	text-decoration: none;
+	color: #990000
+}
+
+.a03:active {
+	text-decoration: underline;
+	color: #663300
+}
+
+.a03:hover {
+	text-decoration: underline;
+	color: #663300
+}
+
+a:link {
+	text-decoration: underline;
+	color: #0066ff
+}
+
+a:visited {
+	text-decoration: underline;
+	color: #669966
+}
+
+a:active {
+	text-decoration: none;
+	color: #000000
+}
+
+a:hover {
+	text-decoration: none;
+	color: #cc0000
+}
+
+th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+
+
+
+
+.wordstyle {
+	font-size: 10px;
+	word-spacing: normal;
+	letter-spacing: normal;
+	line-height: 15pt;
+	font-family: "Arial", "Helvetica", "sans-serif";
+
+
+
+}
+
+.bwordstyle {
+	font-size: 11pt;
+	letter-spacing: 1pt;
+}
+
+.swordstyle {
+	font-size: 9pt;
+	letter-spacing: 0pt;
+}
+
+.bigstyle {
+	font-size: 18px;
+	letter-spacing: 1px;
+	color: #FF0000;
+
+
+}
+
+.13px_word {
+	font-size: 13px;
+	letter-spacing: 1px;
+	color: #FFFFFF;
+}
+
+.12px_word {
+	font-size: 12px;
+	letter-spacing: 1px;
+	color: #666666;
+
+}
+
+.9px_word {
+	font-size: 10px;
+	letter-spacing: 1px;
+	line-height: 10px;
+	color: #666666;
+
+}
+
+.13px_word_nospacing {
+	font-size: 13px;
+	letter-spacing: 1px;
+	line-height: 16px;
+	color: #333333;
+}
+
+.wordtype01 {
+	font-size: 13px;
+	letter-spacing: 0px;
+	color: #333333;
+	border-top: 1px solid #A7CD5C;
+	border-bottom: 1px solid #A7CD5C;
+	border-left: 1px solid #A7CD5C;
+	border-right: 1px solid #A7CD5C;
+	background-color: #E4F5BC;

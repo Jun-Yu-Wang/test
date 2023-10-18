@@ -1,6 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <!-- saved from url=(0060)https://dam.cht.com.tw/CHT_DAM/table.jsp?query=true&switch=1 -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=Big5">
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=Big5">
 
 
 
@@ -9,378 +12,803 @@
 
 
 
-<meta name="GENERATOR" content="IBM WebSphere Studio">
-<meta http-equiv="Content-Style-Type" content="text/css">
-<title>§§µÿπq´Hº∆¶Ïºvπ≥πœ§˘∫ﬁ≤z®t≤Œ</title>
-<link href="./™ÌÆÊªsß@1_files/hinet.css" rel="stylesheet" type="text/css">
+  <meta name="GENERATOR" content="IBM WebSphere Studio">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>‰∏≠ËèØÈõª‰ø°Êï∏‰ΩçÂΩ±ÂÉèÂúñÁâáÁÆ°ÁêÜÁ≥ªÁµ±</title>
+  <link href="./Ë°®Ê†ºË£Ω‰Ωú1_files/hinet.css" rel="stylesheet" type="text/css">
 
-<script type="text/javascript">
-	if (self === top) {
-		var antiClickjack = document.getElementById("antiClickjack");
-		antiClickjack.parentNode.removeChild(antiClickjack);
-	} else {
-		top.location = self.location;
-	}
-</script>
-<script language="Javascript" src="./™ÌÆÊªsß@1_files/_city_v2.js.§U∏¸"></script>
-
-<script language="Javascript">
-function cityChange()
-{
-    defineCityArea("");
-    //send();
-    getSwitchBureau();
-}
-
-function defineCityArea(selectedArea) {
-	i = window.document.inputForm.city.selectedIndex;//city¨∞§U©‘¶°øÔ≥Ê-ø§•´™∫¶W∫Ÿ;//inputForm¨∞º–≈“™∫¶W∫Ÿ
-	k = 0;	
-	if(i != 0) {
-    	window.document.inputForm.cityarea.length = cityarea_account[i] - cityarea_account[i-1];
-    	index = cityarea_account[i-1] + 1;
-    	for (j = 0; j < window.document.inputForm.cityarea.length; j++) {
-    		window.document.inputForm.cityarea.options[j].value = cityarea[index + j];
-    		window.document.inputForm.cityarea.options[j].text = cityarea[index + j];
-    		if(selectedArea == cityarea[index + j])
-    		  k = j;
-    	}
-    	window.document.inputForm.cityarea.options[k].selected = true;
-	}
-}
-
-function getSwitchBureau() {
-	window.document.inputForm.action = "table.jsp?query=true&switch=1";
-	window.document.inputForm.submit();
-}
-
-function send()
-{
-	window.document.inputForm.action="table.jsp?query=true";
-	window.document.inputForm.submit();
-}
-
-function parser()
-{
-	tag=1;
-	if(window.document.inputForm.year.value == "Ω–øÔæ‹¶~´◊") {
-    	tag=0;
-        alert("Ω–øÔæ‹¶~´◊!!");
-    } else if (window.document.inputForm.city.value == "Ω–øÔæ‹ø§•´") {
-        tag=0;
-        alert("Ω–øÔæ‹ø§•´!!");
-    } else if (window.document.inputForm.cityarea.value == "Ω–øÔæ‹") {
-        tag=0;
-        alert("Ω–øÔæ‹∂m¬Ì!!");
-    } else if (window.document.inputForm.text03.value == "Ω–øÔæ‹") {
-        tag=0;
-        alert("Ω–øÔæ‹•Ê¥´ßΩ!!");
-    } else if (window.document.inputForm.textarea1.value == "") {
-        tag=0;
-        alert("Ω–øÈ§J§H§Â°B∏g¿Ÿ¶a≤zµ•≠I¥∫¬≤≠z!!");
-    } else if (window.document.inputForm.textarea2.value == "") {
-        tag=0;
-  		alert("Ω–øÈ§J∑Ì¶~´◊±œ®a®∆πÍ¥y≠z!!");
-    } else if (window.document.inputForm.textarea3.value == "") {
-        tag=0;
- 		alert("Ω–øÈ§J∑Ì¶~´◊®„≈È®∆∏Ò¥y≠z!!");
+  <script type="text/javascript">
+    if (self === top) {
+      var antiClickjack = document.getElementById("antiClickjack");
+      antiClickjack.parentNode.removeChild(antiClickjack);
+    } else {
+      top.location = self.location;
     }
-    
-    if(tag==1) {
-    	area1=window.document.inputForm.textarea1.value;
-	    area2=window.document.inputForm.textarea2.value;
-    	area3=window.document.inputForm.textarea3.value;
-	    for(i=0;i<area1.length;i++) {
-         	if(area1.charAt(i)=='\n') area1=area1.substring(0,i)+"<br>"+area1.substring(i+1,area1.length); 
-    	}
-    	for(j=0;j<area2.length;j++) {
-         	if(area2.charAt(j)=='\n') area2=area2.substring(0,j)+"<br>"+area2.substring(j+1,area2.length);
-    	}
-    	for(k=0;k<area3.length;k++) {
-         	if(area3.charAt(k)=='\n') area3=area3.substring(0,k)+"<br>"+area3.substring(k+1,area3.length);
-    	}
-    
-	    //area1 = encodeURIComponent(area1);
-    	//alert(decodeURIComponent(area1));
-     
-	    window.document.inputForm.textarea1.value = area1;
-    	window.document.inputForm.textarea2.value = area2;
-	    window.document.inputForm.textarea3.value = area3;
-	    window.document.inputForm.action="pt.jsp";
-    	window.document.inputForm.submit();
-	}
-}
+  </script>
+  <script language="Javascript" src="./Ë°®Ê†ºË£Ω‰Ωú1_files/_city_v2.js.‰∏ãËºâ"></script>
 
-function openview(id)
-{
-   window.open("preview.jsp?id="+id+"&fname="+"image.jpg", "authorization", "resizable=yes,scrollbars=yes,location = no,menubar=no");
-}
+  <script language="Javascript">
+    function cityChange() {
+      defineCityArea("");
+      //send();
+      getSwitchBureau();
+    }
 
-function cancel()
-{
-	parent.location.href="table.jsp";
-}
-//!-->
-</script>
+    function defineCityArea(selectedArea) {
+      i = window.document.inputForm.city.selectedIndex;//cityÁÇ∫‰∏ãÊãâÂºèÈÅ∏ÂñÆ-Á∏£Â∏ÇÁöÑÂêçÁ®±;//inputFormÁÇ∫Ê®ôÁ±§ÁöÑÂêçÁ®±
+      k = 0;
+      if (i != 0) {
+        window.document.inputForm.cityarea.length = cityarea_account[i] - cityarea_account[i - 1];
+        index = cityarea_account[i - 1] + 1;
+        for (j = 0; j < window.document.inputForm.cityarea.length; j++) {
+          window.document.inputForm.cityarea.options[j].value = cityarea[index + j];
+          window.document.inputForm.cityarea.options[j].text = cityarea[index + j];
+          if (selectedArea == cityarea[index + j])
+            k = j;
+        }
+        window.document.inputForm.cityarea.options[k].selected = true;
+      }
+    }
+
+    function getSwitchBureau() {
+      window.document.inputForm.action = "table.jsp?query=true&switch=1";
+      window.document.inputForm.submit();
+    }
+
+    function send() {
+      window.document.inputForm.action = "table.jsp?query=true";
+      window.document.inputForm.submit();
+    }
+
+    function parser() {
+      tag = 1;
+      if (window.document.inputForm.year.value == "Ë´ãÈÅ∏ÊìáÂπ¥Â∫¶") {
+        tag = 0;
+        alert("Ë´ãÈÅ∏ÊìáÂπ¥Â∫¶!!");
+      } else if (window.document.inputForm.city.value == "Ë´ãÈÅ∏ÊìáÁ∏£Â∏Ç") {
+        tag = 0;
+        alert("Ë´ãÈÅ∏ÊìáÁ∏£Â∏Ç!!");
+      } else if (window.document.inputForm.cityarea.value == "Ë´ãÈÅ∏Êìá") {
+        tag = 0;
+        alert("Ë´ãÈÅ∏ÊìáÈÑâÈéÆ!!");
+      } else if (window.document.inputForm.text03.value == "Ë´ãÈÅ∏Êìá") {
+        tag = 0;
+        alert("Ë´ãÈÅ∏Êìá‰∫§ÊèõÂ±Ä!!");
+      } else if (window.document.inputForm.textarea1.value == "") {
+        tag = 0;
+        alert("Ë´ãËº∏ÂÖ•‰∫∫Êñá„ÄÅÁ∂ìÊøüÂú∞ÁêÜÁ≠âËÉåÊôØÁ∞°Ëø∞!!");
+      } else if (window.document.inputForm.textarea2.value == "") {
+        tag = 0;
+        alert("Ë´ãËº∏ÂÖ•Áï∂Âπ¥Â∫¶ÊïëÁÅΩ‰∫ãÂØ¶ÊèèËø∞!!");
+      } else if (window.document.inputForm.textarea3.value == "") {
+        tag = 0;
+        alert("Ë´ãËº∏ÂÖ•Áï∂Âπ¥Â∫¶ÂÖ∑È´î‰∫ãË∑°ÊèèËø∞!!");
+      }
+
+      if (tag == 1) {
+        area1 = window.document.inputForm.textarea1.value;
+        area2 = window.document.inputForm.textarea2.value;
+        area3 = window.document.inputForm.textarea3.value;
+        for (i = 0; i < area1.length; i++) {
+          if (area1.charAt(i) == '\n') area1 = area1.substring(0, i) + "<br>" + area1.substring(i + 1, area1.length);
+        }
+        for (j = 0; j < area2.length; j++) {
+          if (area2.charAt(j) == '\n') area2 = area2.substring(0, j) + "<br>" + area2.substring(j + 1, area2.length);
+        }
+        for (k = 0; k < area3.length; k++) {
+          if (area3.charAt(k) == '\n') area3 = area3.substring(0, k) + "<br>" + area3.substring(k + 1, area3.length);
+        }
+
+        //area1 = encodeURIComponent(area1);
+        //alert(decodeURIComponent(area1));
+
+        window.document.inputForm.textarea1.value = area1;
+        window.document.inputForm.textarea2.value = area2;
+        window.document.inputForm.textarea3.value = area3;
+        window.document.inputForm.action = "pt.jsp";
+        window.document.inputForm.submit();
+      }
+    }
+
+    function openview(id) {
+      window.open("preview.jsp?id=" + id + "&fname=" + "image.jpg", "authorization", "resizable=yes,scrollbars=yes,location = no,menubar=no");
+    }
+
+    function cancel() {
+      parent.location.href = "table.jsp";
+    }
+    //!-->
+  </script>
 </head>
 
-<body background="./™ÌÆÊªsß@1_files/down-3.gif">
-<form name="inputForm" method="POST" action="https://dam.cht.com.tw/CHT_DAM/pt.jsp">
-<table width="850" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tbody><tr>
-    <td><table width="850" border="0" cellspacing="0" cellpadding="0">
-      <tbody><tr>
-        <td width="350"><img src="./™ÌÆÊªsß@1_files/style02_02.gif" width="301" height="22"></td>
-        <td bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tbody><tr>
-              <td background="./™ÌÆÊªsß@1_files/16_03.gif"><img src="./™ÌÆÊªsß@1_files/16_03.gif" width="3" height="3"></td>
-            </tr>
-          </tbody></table>
-        </td>
-        <td width="365">
-          <div align="left"></div>          
-          <table border="0" cellpadding="0" cellspacing="0">
-            <tbody><tr>
-              <td bgcolor="#FFFFFF" class="a02">°D§uµ{√˛&nbsp;|°D¡`∞»°B§Ω√ˆ&nbsp;|°D¶ÊæP&nbsp;|°DWeb¿≥•Œ&nbsp;|°D®‰•L</td>
-            </tr>
-          </tbody></table></td>
-      </tr>
-    </tbody></table></td>
-  </tr>
-  <tr>
-    <td><img src="./™ÌÆÊªsß@1_files/style02_05.gif" width="850" height="15"></td>
-  </tr>
-  <tr>
-    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tbody><tr>
-        <td width="16"><img src="./™ÌÆÊªsß@1_files/style02_06.gif" width="16" height="136"></td>
-        <td background="./™ÌÆÊªsß@1_files/15_01.gif"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="818" height="136">
-          <param name="movie" value="neter/banner.swf">
-          <param name="quality" value="high">
-          <param name="wmode" value="transparent">
-          <embed src="neter/banner.swf" width="818" height="136" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" wmode="transparent">
-        </object></td>
-        <td width="16"><img src="./™ÌÆÊªsß@1_files/style02_09.gif" width="16" height="136"></td>
-      </tr>
-    </tbody></table></td>
-  </tr>
-  <tr>
-    <td><img src="./™ÌÆÊªsß@1_files/style02_10.gif" width="850" height="12"></td>
-  </tr>
-  <tr>
-    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tbody><tr>
-        <td width="16"><img src="./™ÌÆÊªsß@1_files/style02_11.gif" width="16" height="28"></td>
-        <td background="./™ÌÆÊªsß@1_files/style02_12-g.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tbody><tr>
-            <td width="10">&nbsp;</td>
-            <td><p class="13px_word"><a href="https://dam.cht.com.tw/CHT_DAM/o2.jsp" class="a01">∏ÍÆ∆§W∏¸</a><font color="#FFFFFF">&nbsp;|&nbsp;<a href="https://dam.cht.com.tw/CHT_DAM/v1.jsp" class="a01">∏ÍÆ∆°D∑j¥M / ≠◊ßÔ</a>&nbsp;|&nbsp;<a href="https://dam.cht.com.tw/CHT_DAM/table.jsp" class="a01">™ÌÆÊªsß@</a>&nbsp;|&nbsp;<a href="https://dam.cht.com.tw/CHT_DAM/search.jsp" class="a01">•ºµ≤Æ◊™ÌÆÊ≠◊ßÔ</a>&nbsp;|&nbsp;<a href="https://dam.cht.com.tw/CHT_DAM/search2.jsp" class="a01">§wµ≤Æ◊™ÌÆÊ¨d∏ﬂ</a>&nbsp;|&nbsp;<a href="https://dam.cht.com.tw/CHT_DAM/work.jsp" class="a01">´›≥B≤zÆ◊•Û</a>&nbsp;|&nbsp;<a href="https://dam.cht.com.tw/CHT_DAM/note2.jsp" class="a01">®t≤Œ∏Í∞T</a>&nbsp;|&nbsp;<a href="https://dam.cht.com.tw/CHT_DAM/message.jsp" class="a01">§ΩßiÆ¯Æß</a></font></p>
-            </td>
-          </tr>
-        </tbody></table></td>
-        <td width="16"><img src="./™ÌÆÊªsß@1_files/style02_13.gif" width="16" height="28"></td>
-      </tr>
-    </tbody></table></td>
-  </tr>
-  <tr>
-    <td><img src="./™ÌÆÊªsß@1_files/style02_14.gif" width="850" height="14"></td>
-  </tr>
-  <tr>
-    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tbody><tr>
-        <td width="16" background="./™ÌÆÊªsß@1_files/style02_15.gif"><img src="./™ÌÆÊªsß@1_files/style02_15.gif" width="16" height="78"></td>
-        <td valign="top" bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tbody><tr>
-            <td width="9" valign="top"><img src="./™ÌÆÊªsß@1_files/05_01.gif" width="9" height="5"></td>
-            <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tbody><tr>
-                <td><img src="./™ÌÆÊªsß@1_files/11_02.gif" width="800" height="49"></td>
-              </tr>
-              <tr>
-                <td background="./™ÌÆÊªsß@1_files/05_23.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                  <tbody><tr>
-                    <td width="5" valign="top"><img src="./™ÌÆÊªsß@1_files/07_05.gif" width="5" height="34"></td>
-                    <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                      <tbody><tr>
-                        <td height="44" background="./™ÌÆÊªsß@1_files/11_08.gif"><table border="0" cellspacing="0" cellpadding="5">
-                          <tbody><tr>
-                            <td>§£∏g¿Ÿ¶a∞œ¥∂§Œ™A∞»®„≈È∞ı¶Ê¶®™GÆ◊®“¥y≠z-----</td>
-                            <td><font color="#FFFFFF">
-                              <select id="year" name="year">
-                              <option value="Ω–øÔæ‹¶~´◊">Ω–øÔæ‹¶~´◊</option><option value="92¶~´◊">92¶~´◊</option><option value="93¶~´◊">93¶~´◊</option><option value="94¶~´◊">94¶~´◊</option><option value="95¶~´◊">95¶~´◊</option><option value="96¶~´◊">96¶~´◊</option><option value="97¶~´◊">97¶~´◊</option><option value="98¶~´◊">98¶~´◊</option><option value="99¶~´◊">99¶~´◊</option><option value="100¶~´◊">100¶~´◊</option><option value="101¶~´◊">101¶~´◊</option><option value="102¶~´◊">102¶~´◊</option><option value="103¶~´◊">103¶~´◊</option><option value="104¶~´◊">104¶~´◊</option><option value="105¶~´◊">105¶~´◊</option><option value="106¶~´◊">106¶~´◊</option><option value="107¶~´◊" selected="">107¶~´◊</option><option value="108¶~´◊">108¶~´◊</option><option value="109¶~´◊">109¶~´◊</option><option value="110¶~´◊">110¶~´◊</option><option value="111¶~´◊">111¶~´◊</option><option value="112¶~´◊">112¶~´◊</option>
-                              </select>
-                            </font></td>
-                          </tr>
-                        </tbody></table></td>
-                      </tr>
-                      <tr>
-                        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                          <tbody><tr>
-                            <td><table width="100%" border="0" cellspacing="1" cellpadding="5">
-                              <tbody><tr bgcolor="#E7F0C9">
-                                <td width="31%" bgcolor="#E7F0C9">ø§•´ßO---
-                                    
- 			            <select onchange="cityChange()" name="city">
- 			            
-      				    <option value="Ω–øÔæ‹ø§•´">Ω–øÔæ‹ø§•´</option>
-      				    
-      				    <option value="∞Ú∂©•´">∞Ú∂©•´</option>
-      				    
-      				    <option value="•x•_•´">•x•_•´</option>
-      				    
-      				    <option value="∑s•_•´">∑s•_•´</option>
-      				    
-      				    <option value="ÆÁ∂È•´" selected="">ÆÁ∂È•´</option>
-      				    
-      				    <option value="∑s¶À•´">∑s¶À•´</option>
-      				    
-      				    <option value="∑s¶Àø§">∑s¶Àø§</option>
-      				    
-      				    <option value="≠]Æﬂø§">≠]Æﬂø§</option>
-      				    
-      				    <option value="•x§§•´">•x§§•´</option>
-      				    
-      				    <option value="π¸§∆ø§">π¸§∆ø§</option>
-      				    
-      				    <option value="´nßÎø§">´nßÎø§</option>
-      				    
-      				    <option value="∂≥™Lø§">∂≥™Lø§</option>
-      				    
-      				    <option value="π≈∏q•´">π≈∏q•´</option>
-      				    
-      				    <option value="π≈∏qø§">π≈∏qø§</option>
-      				    
-      				    <option value="•x´n•´">•x´n•´</option>
-      				    
-      				    <option value="∞™∂Ø•´">∞™∂Ø•´</option>
-      				    
-      				    <option value="´Ã™Fø§">´Ã™Fø§</option>
-      				    
-      				    <option value="•x™Fø§">•x™Fø§</option>
-      				    
-      				    <option value="™·Ω¨ø§">™·Ω¨ø§</option>
-      				    
-      				    <option value="©yƒıø§">©yƒıø§</option>
-      				    
-      				    <option value="ºÍ¥Úø§">ºÍ¥Úø§</option>
-      				    
-      				    <option value="™˜™˘ø§">™˜™˘ø§</option>
-      				    
-      				    <option value="≥s¶øø§">≥s¶øø§</option>
-      				    
-                                    </select>
-                                </td>
-                                <td width="20%">∂m¬ÌßO---
-                                    <select name="cityarea" onchange="getSwitchBureau()">
+<body background="./Ë°®Ê†ºË£Ω‰Ωú1_files/down-3.gif">
+  <form name="inputForm" method="POST" action="https://dam.cht.com.tw/CHT_DAM/pt.jsp">
+    <table width="850" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr>
+          <td>
+            <table width="850" border="0" cellspacing="0" cellpadding="0">
+              <tbody>
+                <tr>
+                  <td width="350"><img src="./Ë°®Ê†ºË£Ω‰Ωú1_files/style02_02.gif" width="301" height="22"></td>
+                  <td bgcolor="#FFFFFF">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tbody>
+                        <tr>
+                          <td background="./Ë°®Ê†ºË£Ω‰Ωú1_files/16_03.gif"><img src="./Ë°®Ê†ºË£Ω‰Ωú1_files/16_03.gif" width="3"
+                              height="3"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                  <td width="365">
+                    <div align="left"></div>
+                    <table border="0" cellpadding="0" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td bgcolor="#FFFFFF" class="a02">ÔºéÂ∑•Á®ãÈ°û&nbsp;|ÔºéÁ∏ΩÂãô„ÄÅÂÖ¨Èóú&nbsp;|ÔºéË°åÈä∑&nbsp;|ÔºéWebÊáâÁî®&nbsp;|ÔºéÂÖ∂‰ªñ</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="./Ë°®Ê†ºË£Ω‰Ωú1_files/style02_05.gif" width="850" height="15"></td>
+        </tr>
+        <tr>
+          <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tbody>
+                <tr>
+                  <td width="16"><img src="./Ë°®Ê†ºË£Ω‰Ωú1_files/style02_06.gif" width="16" height="136"></td>
+                  <td background="./Ë°®Ê†ºË£Ω‰Ωú1_files/15_01.gif"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+                      codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0"
+                      width="818" height="136">
+                      <param name="movie" value="neter/banner.swf">
+                      <param name="quality" value="high">
+                      <param name="wmode" value="transparent">
+                      <embed src="neter/banner.swf" width="818" height="136" quality="high"
+                        pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"
+                        wmode="transparent">
+                    </object></td>
+                  <td width="16"><img src="./Ë°®Ê†ºË£Ω‰Ωú1_files/style02_09.gif" width="16" height="136"></td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="./Ë°®Ê†ºË£Ω‰Ωú1_files/style02_10.gif" width="850" height="12"></td>
+        </tr>
+        <tr>
+          <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tbody>
+                <tr>
+                  <td width="16"><img src="./Ë°®Ê†ºË£Ω‰Ωú1_files/style02_11.gif" width="16" height="28"></td>
+                  <td background="./Ë°®Ê†ºË£Ω‰Ωú1_files/style02_12-g.gif">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tbody>
+                        <tr>
+                          <td width="10">&nbsp;</td>
+                          <td>
+                            <p class="13px_word"><a href="https://dam.cht.com.tw/CHT_DAM/o2.jsp" class="a01">Ë≥áÊñô‰∏äËºâ</a>
+                              <font color="#FFFFFF">&nbsp;|&nbsp;<a href="https://dam.cht.com.tw/CHT_DAM/v1.jsp"
+                                  class="a01">Ë≥áÊñôÔºéÊêúÂ∞ã / ‰øÆÊîπ</a>&nbsp;|&nbsp;<a
+                                  href="https://dam.cht.com.tw/CHT_DAM/table.jsp" class="a01">Ë°®Ê†ºË£Ω‰Ωú</a>&nbsp;|&nbsp;<a
+                                  href="https://dam.cht.com.tw/CHT_DAM/search.jsp"
+                                  class="a01">Êú™ÁµêÊ°àË°®Ê†º‰øÆÊîπ</a>&nbsp;|&nbsp;<a
+                                  href="https://dam.cht.com.tw/CHT_DAM/search2.jsp"
+                                  class="a01">Â∑≤ÁµêÊ°àË°®Ê†ºÊü•Ë©¢</a>&nbsp;|&nbsp;<a href="https://dam.cht.com.tw/CHT_DAM/work.jsp"
+                                  class="a01">ÂæÖËôïÁêÜÊ°à‰ª∂</a>&nbsp;|&nbsp;<a href="https://dam.cht.com.tw/CHT_DAM/note2.jsp"
+                                  class="a01">Á≥ªÁµ±Ë≥áË®ä</a>&nbsp;|&nbsp;<a href="https://dam.cht.com.tw/CHT_DAM/message.jsp"
+                                  class="a01">ÂÖ¨ÂëäÊ∂àÊÅØ</a></font>
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                  <td width="16"><img src="./Ë°®Ê†ºË£Ω‰Ωú1_files/style02_13.gif" width="16" height="28"></td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="./Ë°®Ê†ºË£Ω‰Ωú1_files/style02_14.gif" width="850" height="14"></td>
+        </tr>
+        <tr>
+          <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tbody>
+                <tr>
+                  <td width="16" background="./Ë°®Ê†ºË£Ω‰Ωú1_files/style02_15.gif"><img src="./Ë°®Ê†ºË£Ω‰Ωú1_files/style02_15.gif"
+                      width="16" height="78"></td>
+                  <td valign="top" bgcolor="#FFFFFF">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tbody>
+                        <tr>
+                          <td width="9" valign="top"><img src="./Ë°®Ê†ºË£Ω‰Ωú1_files/05_01.gif" width="9" height="5"></td>
+                          <td valign="top">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tbody>
+                                <tr>
+                                  <td><img src="./Ë°®Ê†ºË£Ω‰Ωú1_files/11_02.gif" width="800" height="49"></td>
+                                </tr>
+                                <tr>
+                                  <td background="./Ë°®Ê†ºË£Ω‰Ωú1_files/05_23.gif">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                      <tbody>
+                                        <tr>
+                                          <td width="5" valign="top"><img src="./Ë°®Ê†ºË£Ω‰Ωú1_files/07_05.gif" width="5"
+                                              height="34"></td>
+                                          <td valign="top">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td height="44" background="./Ë°®Ê†ºË£Ω‰Ωú1_files/11_08.gif">
+                                                    <table border="0" cellspacing="0" cellpadding="5">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td>‰∏çÁ∂ìÊøüÂú∞ÂçÄÊôÆÂèäÊúçÂãôÂÖ∑È´îÂü∑Ë°åÊàêÊûúÊ°à‰æãÊèèËø∞-----</td>
+                                                          <td>
+                                                            <font color="#FFFFFF">
+                                                              <select id="year" name="year">
+                                                                <option value="Ë´ãÈÅ∏ÊìáÂπ¥Â∫¶">Ë´ãÈÅ∏ÊìáÂπ¥Â∫¶</option>
+                                                                <option value="92Âπ¥Â∫¶">92Âπ¥Â∫¶</option>
+                                                                <option value="93Âπ¥Â∫¶">93Âπ¥Â∫¶</option>
+                                                                <option value="94Âπ¥Â∫¶">94Âπ¥Â∫¶</option>
+                                                                <option value="95Âπ¥Â∫¶">95Âπ¥Â∫¶</option>
+                                                                <option value="96Âπ¥Â∫¶">96Âπ¥Â∫¶</option>
+                                                                <option value="97Âπ¥Â∫¶">97Âπ¥Â∫¶</option>
+                                                                <option value="98Âπ¥Â∫¶">98Âπ¥Â∫¶</option>
+                                                                <option value="99Âπ¥Â∫¶">99Âπ¥Â∫¶</option>
+                                                                <option value="100Âπ¥Â∫¶">100Âπ¥Â∫¶</option>
+                                                                <option value="101Âπ¥Â∫¶">101Âπ¥Â∫¶</option>
+                                                                <option value="102Âπ¥Â∫¶">102Âπ¥Â∫¶</option>
+                                                                <option value="103Âπ¥Â∫¶">103Âπ¥Â∫¶</option>
+                                                                <option value="104Âπ¥Â∫¶">104Âπ¥Â∫¶</option>
+                                                                <option value="105Âπ¥Â∫¶">105Âπ¥Â∫¶</option>
+                                                                <option value="106Âπ¥Â∫¶">106Âπ¥Â∫¶</option>
+                                                                <option value="107Âπ¥Â∫¶" selected="">107Âπ¥Â∫¶</option>
+                                                                <option value="108Âπ¥Â∫¶">108Âπ¥Â∫¶</option>
+                                                                <option value="109Âπ¥Â∫¶">109Âπ¥Â∫¶</option>
+                                                                <option value="110Âπ¥Â∫¶">110Âπ¥Â∫¶</option>
+                                                                <option value="111Âπ¥Â∫¶">111Âπ¥Â∫¶</option>
+                                                                <option value="112Âπ¥Â∫¶">112Âπ¥Â∫¶</option>
+                                                              </select>
+                                                            </font>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td>
+                                                            <table width="100%" border="0" cellspacing="1"
+                                                              cellpadding="5">
+                                                              <tbody>
+                                                                <tr bgcolor="#E7F0C9">
+                                                                  <td width="31%" bgcolor="#E7F0C9">Á∏£Â∏ÇÂà•---
 
-      <script language="Javascript">
-        defineCityArea('¥_ø≥∞œ');
-      </script><option value="¥_ø≥∞œ">¥_ø≥∞œ</option><option value="•≠¬Ì∞œ">•≠¬Ì∞œ</option><option value="¿sºÊ∞œ">¿sºÊ∞œ</option><option value="∑®±ˆ∞œ">∑®±ˆ∞œ</option><option value="∑s´Œ∞œ">∑s´Œ∞œ</option><option value="∆[≠µ∞œ">∆[≠µ∞œ</option><option value="ÆÁ∂È∞œ">ÆÁ∂È∞œ</option><option value="¿t§s∞œ">¿t§s∞œ</option><option value="ƒ™¶À∞œ">ƒ™¶À∞œ</option><option value="§j∑À∞œ">§j∑À∞œ</option><option value="§j∂È∞œ">§j∂È∞œ</option><option value="§§√c∞œ">§§√c∞œ</option><option value="§Kºw∞œ">§Kºw∞œ</option>
+                                                                    <select onchange="cityChange()" name="city">
 
-      </select>
-                                </td>
-                                <td width="49%">•Ê¥´ßΩßO---
-                                
-				
-				
-				
-				
-				
-                                <select name="text03" onchange="send()">
-                                
-          <option selected="" value="ÆÁ∂Èµÿ≥Æ">ÆÁ∂Èµÿ≥Æ</option>
+                                                                      <option value="Ë´ãÈÅ∏ÊìáÁ∏£Â∏Ç">Ë´ãÈÅ∏ÊìáÁ∏£Â∏Ç</option>
 
-          <option value="ÆÁ∂È¥_ø≥">ÆÁ∂È¥_ø≥</option>
+                                                                      <option value="Âü∫ÈöÜÂ∏Ç">Âü∫ÈöÜÂ∏Ç</option>
 
-	</select>
-                                </td>
-                              </tr>
-                              <tr bgcolor="#EEF0C9">
-                                <td>§@°B§H§Â°B∏g¿Ÿ¶a≤zµ•≠I¥∫¬≤≠z</td>
-                                <td colspan="2">
-                                <textarea id="textarea1" name="textarea1" rows="7" wrap="VIRTUAL" cols="70"></textarea>
-                                </td>
-                              </tr>
-                              <tr bgcolor="#E7F0C9">
-                                <td>§G°B∑Ì¶~´◊±œ®a®∆πÍ¥y≠z°G<br>
-      1°B®aÆ`±œ¥©<br>
-      2°B®aÆ`¥_≠Ï<br>°y¶p´D±œ®aß@∑~°A•ªƒÊΩ–∂Ò°uµL°v°z</td>
-      <td colspan="2">
-                                <textarea name="textarea2" rows="7" wrap="VIRTUAL" cols="70"></textarea>
-                                </td>
-                              </tr>
-                              <tr bgcolor="#EEF0C9">
-                                <td>§T°B∑Ì¶~´◊®„≈È®∆∏Ò¥y≠z°G<br>
-      1°B∏…±j¶w•˛±π¨I<br>
-      2°B®„≈ÈØSÆÌ∞^ƒm<br>
-      3°B≠´§j´K•¡±π¨I<br>
-      4°B®‰•L®„≈È®∆∏Ò</td>
-       <td colspan="2">
-      				<textarea name="textarea3" rows="7" wrap="VIRTUAL" cols="70"></textarea>
-                                </td>
-                              </tr>
-                              
-                              <tr bgcolor="#E7F0C9">
-                              	<td colspan="3" valign="top" bgcolor="#E7F0C9">•|°B®„≈È®∆∏Ò¶ı√“∏ÍÆ∆°B∑”§˘°y≥Ã¶høÔæ‹12±i∑”§˘°z</td>
-                              </tr>
-                              <tr bgcolor="#E7F0C9">
-                                <td colspan="3" valign="top" bgcolor="#EEF0C9"><table width="98%" border="0" align="center" cellpadding="3" cellspacing="1">
-                                  <tbody><tr bgcolor="#F6F9EA">
-                                    <th width="40">øÔ®˙
-                                    </th><th width="40">±∆ß«
-                                    </th><th width="40">πwƒ˝
-                                    </th><th width="130">πœ§˘¶W∫Ÿ
-                                    </th><th width="173">πœ§˘ª°©˙
-                                    </th><th width="70">©Áƒ·™Ã
-                                    </th><th width="50">¿ÁπB≥B
-                                    </th><th width="90">æ˜©–¶W∫Ÿ
-                                    </th><th width="70">∂Ò™Ì§H
-                                    </th></tr><tr bgcolor="#F6F9EA"><td><center><input name="piclass" type="checkbox" id="I000031472" value="I000031472"></center></td><td><center><input name="I000031472" type="text" id="I000031472" size="2" value="0"></center></td><td class="12px_word"><div align="center"><a href="javaScript:openview(&#39;I000031472&#39;)">πwƒ˝</a></div></td><td class="12px_word"><div align="left">ßG©Ò¨[™≈πq∆l</div></td><td class="12px_word"><div align="left">NF1XF151D§uµ{,¶a¬I:•d©‘™K37§¿3¨I§u§§∑”§˘</div></td><td class="12px_word"><div align="center">ºB±o¶u</div></td><td class="12px_word"><div align="center">ÆÁ∂È¿ÁπB≥B</div></td><td class="12px_word"><div align="center">ÆÁ∂Èµÿ≥Æ</div></td><td class="12px_word"><div align="center">≥Ø©æ´i      </div></td></tr><tr bgcolor="#F6F9EA"><td><center><input name="piclass" type="checkbox" id="I000031473" value="I000031473"></center></td><td><center><input name="I000031473" type="text" id="I000031473" size="2" value="0"></center></td><td class="12px_word"><div align="center"><a href="javaScript:openview(&#39;I000031473&#39;)">πwƒ˝</a></div></td><td class="12px_word"><div align="left">ßG©Ò¨[™≈πq∆l</div></td><td class="12px_word"><div align="left">NF1XF151D§uµ{,¶a¬I:•d©‘™K37§¿3¨I§u´·∑”§˘</div></td><td class="12px_word"><div align="center">ºB±o¶u</div></td><td class="12px_word"><div align="center">ÆÁ∂È¿ÁπB≥B</div></td><td class="12px_word"><div align="center">ÆÁ∂Èµÿ≥Æ</div></td><td class="12px_word"><div align="center">≥Ø©æ´i      </div></td></tr><tr bgcolor="#F6F9EA"><td><center><input name="piclass" type="checkbox" id="I000031797" value="I000031797"></center></td><td><center><input name="I000031797" type="text" id="I000031797" size="2" value="0"></center></td><td class="12px_word"><div align="center"><a href="javaScript:openview(&#39;I000031797&#39;)">πwƒ˝</a></div></td><td class="12px_word"><div align="left">NL1165233-6</div></td><td class="12px_word"><div align="left">§W∞™∑F54§¿4πq±Ï∂…±◊</div></td><td class="12px_word"><div align="center">None</div></td><td class="12px_word"><div align="center">ÆÁ∂È¿ÁπB≥B</div></td><td class="12px_word"><div align="center">ÆÁ∂Èµÿ≥Æ</div></td><td class="12px_word"><div align="center">∞™ß”∫˚      </div></td></tr><tr bgcolor="#F6F9EA"><td><center><input name="piclass" type="checkbox" id="I000031798" value="I000031798"></center></td><td><center><input name="I000031798" type="text" id="I000031798" size="2" value="0"></center></td><td class="12px_word"><div align="center"><a href="javaScript:openview(&#39;I000031798&#39;)">πwƒ˝</a></div></td><td class="12px_word"><div align="left">NL1165233-6-1</div></td><td class="12px_word"><div align="left">§W∞™∑F54§¿4πq±Ï∂…±◊≠◊¥_´·∑”§˘</div></td><td class="12px_word"><div align="center">None</div></td><td class="12px_word"><div align="center">ÆÁ∂È¿ÁπB≥B</div></td><td class="12px_word"><div align="center">ÆÁ∂Èµÿ≥Æ</div></td><td class="12px_word"><div align="center">∞™ß”∫˚      </div></td></tr><tr bgcolor="#F6F9EA"><td><center><input name="piclass" type="checkbox" id="I000031799" value="I000031799"></center></td><td><center><input name="I000031799" type="text" id="I000031799" size="2" value="0"></center></td><td class="12px_word"><div align="center"><a href="javaScript:openview(&#39;I000031799&#39;)">πwƒ˝</a></div></td><td class="12px_word"><div align="left">NL1165255-6-4</div></td><td class="12px_word"><div align="left">¶P§ﬂ™K48§¿3§ß1πq±Ï∂…±◊</div></td><td class="12px_word"><div align="center">None</div></td><td class="12px_word"><div align="center">ÆÁ∂È¿ÁπB≥B</div></td><td class="12px_word"><div align="center">ÆÁ∂Èµÿ≥Æ</div></td><td class="12px_word"><div align="center">∞™ß”∫˚      </div></td></tr><tr bgcolor="#F6F9EA"><td><center><input name="piclass" type="checkbox" id="I000031800" value="I000031800"></center></td><td><center><input name="I000031800" type="text" id="I000031800" size="2" value="0"></center></td><td class="12px_word"><div align="center"><a href="javaScript:openview(&#39;I000031800&#39;)">πwƒ˝</a></div></td><td class="12px_word"><div align="left">NL1165255-6-5</div></td><td class="12px_word"><div align="left">¶P§ﬂ™K48§¿3§ß1πq±Ï∂…±◊≠◊¥_´·∑”§˘</div></td><td class="12px_word"><div align="center">None</div></td><td class="12px_word"><div align="center">ÆÁ∂È¿ÁπB≥B</div></td><td class="12px_word"><div align="center">ÆÁ∂Èµÿ≥Æ</div></td><td class="12px_word"><div align="center">∞™ß”∫˚      </div></td></tr><tr bgcolor="#F6F9EA"><td><center><input name="piclass" type="checkbox" id="I000031801" value="I000031801"></center></td><td><center><input name="I000031801" type="text" id="I000031801" size="2" value="0"></center></td><td class="12px_word"><div align="center"><a href="javaScript:openview(&#39;I000031801&#39;)">πwƒ˝</a></div></td><td class="12px_word"><div align="left">NL1169108-4</div></td><td class="12px_word"><div align="left">¶P§ﬂ™K66§¿1-1πq±Ï∏…•ﬂ</div></td><td class="12px_word"><div align="center">None</div></td><td class="12px_word"><div align="center">ÆÁ∂È¿ÁπB≥B</div></td><td class="12px_word"><div align="center">ÆÁ∂Èµÿ≥Æ</div></td><td class="12px_word"><div align="center">∞™ß”∫˚      </div></td></tr><tr bgcolor="#F6F9EA"><td><center><input name="piclass" type="checkbox" id="I000031802" value="I000031802"></center></td><td><center><input name="I000031802" type="text" id="I000031802" size="2" value="0"></center></td><td class="12px_word"><div align="center"><a href="javaScript:openview(&#39;I000031802&#39;)">πwƒ˝</a></div></td><td class="12px_word"><div align="left">NL1169108-4-1</div></td><td class="12px_word"><div align="left">¶P§ﬂ™K66§¿1-1πq±Ï∏…•ﬂ≠◊¥_´·∑”§˘</div></td><td class="12px_word"><div align="center">None</div></td><td class="12px_word"><div align="center">ÆÁ∂È¿ÁπB≥B</div></td><td class="12px_word"><div align="center">ÆÁ∂Èµÿ≥Æ</div></td><td class="12px_word"><div align="center">∞™ß”∫˚      </div>
-				    </td></tr></tbody></table></td></tr>
-                            	    </tbody></table></td></tr>
-                                        
-                          <tr>
-                            <td><img src="./™ÌÆÊªsß@1_files/09_06.gif" width="788" height="10"></td>
-                          </tr>
-                          <tr>
-                            <td height="50"><div align="center"><span lang="EN-US">
-                              <input type="button" value="ƒ~ƒÚ∂Òºg" name="Submit9" onclick="parser()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                              <input type="button" name="®˙Æ¯∂Òºg" value="®˙Æ¯∂Òºg" onclick="cancel()">
-                            </span></div></td>
-                          </tr>
-                        </tbody></table></td>
-                      </tr>
-                    </tbody></table></td>
-                    <td width="5" valign="top"><img src="./™ÌÆÊªsß@1_files/07_07.gif" width="5" height="34"></td>
-                  </tr>
-                </tbody></table></td>
-              </tr>
-              <tr>
-                <td><img src="./™ÌÆÊªsß@1_files/05_25.gif" width="800" height="9"></td>
-              </tr>
-              <tr>
-                <td height="9"><img src="./™ÌÆÊªsß@1_files/05_24.gif" width="9" height="9"></td>
-              </tr>
-            </tbody></table></td>
-            <td width="9" valign="top"><img src="./™ÌÆÊªsß@1_files/05_01.gif" width="9" height="5"></td>
-          </tr>
-        </tbody></table></td>
-        <td width="16" background="./™ÌÆÊªsß@1_files/style02_17.gif"><img src="./™ÌÆÊªsß@1_files/style02_17.gif" width="16" height="78"></td>
-      </tr>
-    </tbody></table></td>
-  </tr>
-  <tr>
-    <td><img src="./™ÌÆÊªsß@1_files/style02_19-g.gif" width="850" height="17"></td>
-  </tr>
-  <tr>
-    <td><table width="100%" border="0" cellspacing="0" cellpadding="10">
-      <tbody><tr>
-        <td><div align="center">COPYRIGHT &#169; 2005 CHUNGHWA TELECOM CO., LTD.<br>
-        ™©≈v©“¶≥°G§§µÿπq´H™—•˜¶≥≠≠§Ω•q</div>
-        </td>
-      </tr>
-    </tbody></table></td>
-  </tr>
-</tbody></table>
+                                                                      <option value="Âè∞ÂåóÂ∏Ç">Âè∞ÂåóÂ∏Ç</option>
+
+                                                                      <option value="Êñ∞ÂåóÂ∏Ç">Êñ∞ÂåóÂ∏Ç</option>
+
+                                                                      <option value="Ê°ÉÂúíÂ∏Ç" selected="">Ê°ÉÂúíÂ∏Ç</option>
+
+                                                                      <option value="Êñ∞Á´πÂ∏Ç">Êñ∞Á´πÂ∏Ç</option>
+
+                                                                      <option value="Êñ∞Á´πÁ∏£">Êñ∞Á´πÁ∏£</option>
+
+                                                                      <option value="ËãóÊ†óÁ∏£">ËãóÊ†óÁ∏£</option>
+
+                                                                      <option value="Âè∞‰∏≠Â∏Ç">Âè∞‰∏≠Â∏Ç</option>
+
+                                                                      <option value="ÂΩ∞ÂåñÁ∏£">ÂΩ∞ÂåñÁ∏£</option>
+
+                                                                      <option value="ÂçóÊäïÁ∏£">ÂçóÊäïÁ∏£</option>
+
+                                                                      <option value="Èõ≤ÊûóÁ∏£">Èõ≤ÊûóÁ∏£</option>
+
+                                                                      <option value="ÂòâÁæ©Â∏Ç">ÂòâÁæ©Â∏Ç</option>
+
+                                                                      <option value="ÂòâÁæ©Á∏£">ÂòâÁæ©Á∏£</option>
+
+                                                                      <option value="Âè∞ÂçóÂ∏Ç">Âè∞ÂçóÂ∏Ç</option>
+
+                                                                      <option value="È´òÈõÑÂ∏Ç">È´òÈõÑÂ∏Ç</option>
+
+                                                                      <option value="Â±èÊù±Á∏£">Â±èÊù±Á∏£</option>
+
+                                                                      <option value="Âè∞Êù±Á∏£">Âè∞Êù±Á∏£</option>
+
+                                                                      <option value="Ëä±ËìÆÁ∏£">Ëä±ËìÆÁ∏£</option>
+
+                                                                      <option value="ÂÆúËò≠Á∏£">ÂÆúËò≠Á∏£</option>
+
+                                                                      <option value="ÊæéÊπñÁ∏£">ÊæéÊπñÁ∏£</option>
+
+                                                                      <option value="ÈáëÈñÄÁ∏£">ÈáëÈñÄÁ∏£</option>
+
+                                                                      <option value="ÈÄ£Ê±üÁ∏£">ÈÄ£Ê±üÁ∏£</option>
+
+                                                                    </select>
+                                                                  </td>
+                                                                  <td width="20%">ÈÑâÈéÆÂà•---
+                                                                    <select name="cityarea"
+                                                                      onchange="getSwitchBureau()">
+
+                                                                      <script language="Javascript">
+                                                                        defineCityArea('Âæ©ËààÂçÄ');
+                                                                      </script>
+                                                                      <option value="Âæ©ËààÂçÄ">Âæ©ËààÂçÄ</option>
+                                                                      <option value="Âπ≥ÈéÆÂçÄ">Âπ≥ÈéÆÂçÄ</option>
+                                                                      <option value="ÈæçÊΩ≠ÂçÄ">ÈæçÊΩ≠ÂçÄ</option>
+                                                                      <option value="Ê•äÊ¢ÖÂçÄ">Ê•äÊ¢ÖÂçÄ</option>
+                                                                      <option value="Êñ∞Â±ãÂçÄ">Êñ∞Â±ãÂçÄ</option>
+                                                                      <option value="ËßÄÈü≥ÂçÄ">ËßÄÈü≥ÂçÄ</option>
+                                                                      <option value="Ê°ÉÂúíÂçÄ">Ê°ÉÂúíÂçÄ</option>
+                                                                      <option value="ÈæúÂ±±ÂçÄ">ÈæúÂ±±ÂçÄ</option>
+                                                                      <option value="ËòÜÁ´πÂçÄ">ËòÜÁ´πÂçÄ</option>
+                                                                      <option value="Â§ßÊ∫™ÂçÄ">Â§ßÊ∫™ÂçÄ</option>
+                                                                      <option value="Â§ßÂúíÂçÄ">Â§ßÂúíÂçÄ</option>
+                                                                      <option value="‰∏≠Â£¢ÂçÄ">‰∏≠Â£¢ÂçÄ</option>
+                                                                      <option value="ÂÖ´Âæ∑ÂçÄ">ÂÖ´Âæ∑ÂçÄ</option>
+
+                                                                    </select>
+                                                                  </td>
+                                                                  <td width="49%">‰∫§ÊèõÂ±ÄÂà•---
 
 
-</form></body></html>
+
+
+
+
+                                                                    <select name="text03" onchange="send()">
+
+                                                                      <option selected="" value="Ê°ÉÂúíËèØÈôµ">Ê°ÉÂúíËèØÈôµ</option>
+
+                                                                      <option value="Ê°ÉÂúíÂæ©Ëàà">Ê°ÉÂúíÂæ©Ëàà</option>
+
+                                                                    </select>
+                                                                  </td>
+                                                                </tr>
+                                                                <tr bgcolor="#EEF0C9">
+                                                                  <td>‰∏Ä„ÄÅ‰∫∫Êñá„ÄÅÁ∂ìÊøüÂú∞ÁêÜÁ≠âËÉåÊôØÁ∞°Ëø∞</td>
+                                                                  <td colspan="2">
+                                                                    <textarea id="textarea1" name="textarea1" rows="7"
+                                                                      wrap="VIRTUAL" cols="70"></textarea>
+                                                                  </td>
+                                                                </tr>
+                                                                <tr bgcolor="#E7F0C9">
+                                                                  <td>‰∫å„ÄÅÁï∂Âπ¥Â∫¶ÊïëÁÅΩ‰∫ãÂØ¶ÊèèËø∞Ôºö<br>
+                                                                    1„ÄÅÁÅΩÂÆ≥ÊïëÊè¥<br>
+                                                                    2„ÄÅÁÅΩÂÆ≥Âæ©Âéü<br>„ÄéÂ¶ÇÈùûÊïëÁÅΩ‰ΩúÊ•≠ÔºåÊú¨Ê¨ÑË´ãÂ°´„ÄåÁÑ°„Äç„Äè</td>
+                                                                  <td colspan="2">
+                                                                    <textarea name="textarea2" rows="7" wrap="VIRTUAL"
+                                                                      cols="70"></textarea>
+                                                                  </td>
+                                                                </tr>
+                                                                <tr bgcolor="#EEF0C9">
+                                                                  <td>‰∏â„ÄÅÁï∂Âπ¥Â∫¶ÂÖ∑È´î‰∫ãË∑°ÊèèËø∞Ôºö<br>
+                                                                    1„ÄÅË£úÂº∑ÂÆâÂÖ®Êé™ÊñΩ<br>
+                                                                    2„ÄÅÂÖ∑È´îÁâπÊÆäË≤¢Áçª<br>
+                                                                    3„ÄÅÈáçÂ§ß‰æøÊ∞ëÊé™ÊñΩ<br>
+                                                                    4„ÄÅÂÖ∂‰ªñÂÖ∑È´î‰∫ãË∑°</td>
+                                                                  <td colspan="2">
+                                                                    <textarea name="textarea3" rows="7" wrap="VIRTUAL"
+                                                                      cols="70"></textarea>
+                                                                  </td>
+                                                                </tr>
+
+                                                                <tr bgcolor="#E7F0C9">
+                                                                  <td colspan="3" valign="top" bgcolor="#E7F0C9">
+                                                                    Âõõ„ÄÅÂÖ∑È´î‰∫ãË∑°‰ΩêË≠âË≥áÊñô„ÄÅÁÖßÁâá„ÄéÊúÄÂ§öÈÅ∏Êìá12ÂºµÁÖßÁâá„Äè</td>
+                                                                </tr>
+                                                                <tr bgcolor="#E7F0C9">
+                                                                  <td colspan="3" valign="top" bgcolor="#EEF0C9">
+                                                                    <table width="98%" border="0" align="center"
+                                                                      cellpadding="3" cellspacing="1">
+                                                                      <tbody>
+                                                                        <tr bgcolor="#F6F9EA">
+                                                                          <th width="40">ÈÅ∏Âèñ
+                                                                          </th>
+                                                                          <th width="40">ÊéíÂ∫è
+                                                                          </th>
+                                                                          <th width="40">È†êË¶Ω
+                                                                          </th>
+                                                                          <th width="130">ÂúñÁâáÂêçÁ®±
+                                                                          </th>
+                                                                          <th width="173">ÂúñÁâáË™™Êòé
+                                                                          </th>
+                                                                          <th width="70">ÊãçÊîùËÄÖ
+                                                                          </th>
+                                                                          <th width="50">ÁáüÈÅãËôï
+                                                                          </th>
+                                                                          <th width="90">Ê©üÊàøÂêçÁ®±
+                                                                          </th>
+                                                                          <th width="70">Â°´Ë°®‰∫∫
+                                                                          </th>
+                                                                        </tr>
+                                                                        <tr bgcolor="#F6F9EA">
+                                                                          <td>
+                                                                            <center><input name="piclass"
+                                                                                type="checkbox" id="I000031472"
+                                                                                value="I000031472"></center>
+                                                                          </td>
+                                                                          <td>
+                                                                            <center><input name="I000031472" type="text"
+                                                                                id="I000031472" size="2" value="0">
+                                                                            </center>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center"><a
+                                                                                href="javaScript:openview(&#39;I000031472&#39;)">È†êË¶Ω</a>
+                                                                            </div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="left">‰ΩàÊîæÊû∂Á©∫ÈõªÁ∫ú</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="left">
+                                                                              NF1XF151DÂ∑•Á®ã,Âú∞Èªû:Âç°ÊãâÊûù37ÂàÜ3ÊñΩÂ∑•‰∏≠ÁÖßÁâá</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center">ÂäâÂæóÂÆà</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center">Ê°ÉÂúíÁáüÈÅãËôï</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center">Ê°ÉÂúíËèØÈôµ</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center">Èô≥Âø†Âãá </div>
+                                                                          </td>
+                                                                        </tr>
+                                                                        <tr bgcolor="#F6F9EA">
+                                                                          <td>
+                                                                            <center><input name="piclass"
+                                                                                type="checkbox" id="I000031473"
+                                                                                value="I000031473"></center>
+                                                                          </td>
+                                                                          <td>
+                                                                            <center><input name="I000031473" type="text"
+                                                                                id="I000031473" size="2" value="0">
+                                                                            </center>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center"><a
+                                                                                href="javaScript:openview(&#39;I000031473&#39;)">È†êË¶Ω</a>
+                                                                            </div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="left">‰ΩàÊîæÊû∂Á©∫ÈõªÁ∫ú</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="left">
+                                                                              NF1XF151DÂ∑•Á®ã,Âú∞Èªû:Âç°ÊãâÊûù37ÂàÜ3ÊñΩÂ∑•ÂæåÁÖßÁâá</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center">ÂäâÂæóÂÆà</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center">Ê°ÉÂúíÁáüÈÅãËôï</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center">Ê°ÉÂúíËèØÈôµ</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center">Èô≥Âø†Âãá </div>
+                                                                          </td>
+                                                                        </tr>
+                                                                        <tr bgcolor="#F6F9EA">
+                                                                          <td>
+                                                                            <center><input name="piclass"
+                                                                                type="checkbox" id="I000031797"
+                                                                                value="I000031797"></center>
+                                                                          </td>
+                                                                          <td>
+                                                                            <center><input name="I000031797" type="text"
+                                                                                id="I000031797" size="2" value="0">
+                                                                            </center>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center"><a
+                                                                                href="javaScript:openview(&#39;I000031797&#39;)">È†êË¶Ω</a>
+                                                                            </div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="left">NL1165233-6</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="left">‰∏äÈ´òÂππ54ÂàÜ4ÈõªÊ°øÂÇæÊñú</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center">None</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center">Ê°ÉÂúíÁáüÈÅãËôï</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center">Ê°ÉÂúíËèØÈôµ</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center">È´òÂøóÁ∂≠ </div>
+                                                                          </td>
+                                                                        </tr>
+                                                                        <tr bgcolor="#F6F9EA">
+                                                                          <td>
+                                                                            <center><input name="piclass"
+                                                                                type="checkbox" id="I000031798"
+                                                                                value="I000031798"></center>
+                                                                          </td>
+                                                                          <td>
+                                                                            <center><input name="I000031798" type="text"
+                                                                                id="I000031798" size="2" value="0">
+                                                                            </center>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center"><a
+                                                                                href="javaScript:openview(&#39;I000031798&#39;)">È†êË¶Ω</a>
+                                                                            </div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="left">NL1165233-6-1</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="left">‰∏äÈ´òÂππ54ÂàÜ4ÈõªÊ°øÂÇæÊñú‰øÆÂæ©ÂæåÁÖßÁâá</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center">None</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center">Ê°ÉÂúíÁáüÈÅãËôï</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center">Ê°ÉÂúíËèØÈôµ</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center">È´òÂøóÁ∂≠ </div>
+                                                                          </td>
+                                                                        </tr>
+                                                                        <tr bgcolor="#F6F9EA">
+                                                                          <td>
+                                                                            <center><input name="piclass"
+                                                                                type="checkbox" id="I000031799"
+                                                                                value="I000031799"></center>
+                                                                          </td>
+                                                                          <td>
+                                                                            <center><input name="I000031799" type="text"
+                                                                                id="I000031799" size="2" value="0">
+                                                                            </center>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center"><a
+                                                                                href="javaScript:openview(&#39;I000031799&#39;)">È†êË¶Ω</a>
+                                                                            </div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="left">NL1165255-6-4</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="left">ÂêåÂøÉÊûù48ÂàÜ3‰πã1ÈõªÊ°øÂÇæÊñú</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center">None</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center">Ê°ÉÂúíÁáüÈÅãËôï</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center">Ê°ÉÂúíËèØÈôµ</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center">È´òÂøóÁ∂≠ </div>
+                                                                          </td>
+                                                                        </tr>
+                                                                        <tr bgcolor="#F6F9EA">
+                                                                          <td>
+                                                                            <center><input name="piclass"
+                                                                                type="checkbox" id="I000031800"
+                                                                                value="I000031800"></center>
+                                                                          </td>
+                                                                          <td>
+                                                                            <center><input name="I000031800" type="text"
+                                                                                id="I000031800" size="2" value="0">
+                                                                            </center>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center"><a
+                                                                                href="javaScript:openview(&#39;I000031800&#39;)">È†êË¶Ω</a>
+                                                                            </div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="left">NL1165255-6-5</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="left">ÂêåÂøÉÊûù48ÂàÜ3‰πã1ÈõªÊ°øÂÇæÊñú‰øÆÂæ©ÂæåÁÖßÁâá</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center">None</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center">Ê°ÉÂúíÁáüÈÅãËôï</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center">Ê°ÉÂúíËèØÈôµ</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center">È´òÂøóÁ∂≠ </div>
+                                                                          </td>
+                                                                        </tr>
+                                                                        <tr bgcolor="#F6F9EA">
+                                                                          <td>
+                                                                            <center><input name="piclass"
+                                                                                type="checkbox" id="I000031801"
+                                                                                value="I000031801"></center>
+                                                                          </td>
+                                                                          <td>
+                                                                            <center><input name="I000031801" type="text"
+                                                                                id="I000031801" size="2" value="0">
+                                                                            </center>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center"><a
+                                                                                href="javaScript:openview(&#39;I000031801&#39;)">È†êË¶Ω</a>
+                                                                            </div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="left">NL1169108-4</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="left">ÂêåÂøÉÊûù66ÂàÜ1-1ÈõªÊ°øË£úÁ´ã</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center">None</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center">Ê°ÉÂúíÁáüÈÅãËôï</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center">Ê°ÉÂúíËèØÈôµ</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center">È´òÂøóÁ∂≠ </div>
+                                                                          </td>
+                                                                        </tr>
+                                                                        <tr bgcolor="#F6F9EA">
+                                                                          <td>
+                                                                            <center><input name="piclass"
+                                                                                type="checkbox" id="I000031802"
+                                                                                value="I000031802"></center>
+                                                                          </td>
+                                                                          <td>
+                                                                            <center><input name="I000031802" type="text"
+                                                                                id="I000031802" size="2" value="0">
+                                                                            </center>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center"><a
+                                                                                href="javaScript:openview(&#39;I000031802&#39;)">È†êË¶Ω</a>
+                                                                            </div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="left">NL1169108-4-1</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="left">ÂêåÂøÉÊûù66ÂàÜ1-1ÈõªÊ°øË£úÁ´ã‰øÆÂæ©ÂæåÁÖßÁâá</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center">None</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center">Ê°ÉÂúíÁáüÈÅãËôï</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center">Ê°ÉÂúíËèØÈôµ</div>
+                                                                          </td>
+                                                                          <td class="12px_word">
+                                                                            <div align="center">È´òÂøóÁ∂≠ </div>
+                                                                          </td>
+                                                                        </tr>
+                                                                      </tbody>
+                                                                    </table>
+                                                                  </td>
+                                                                </tr>
+                                                              </tbody>
+                                                            </table>
+                                                          </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                          <td><img src="./Ë°®Ê†ºË£Ω‰Ωú1_files/09_06.gif" width="788"
+                                                              height="10"></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td height="50">
+                                                            <div align="center"><span lang="EN-US">
+                                                                <input type="button" value="ÁπºÁ∫åÂ°´ÂØ´" name="Submit9"
+                                                                  onclick="parser()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                <input type="button" name="ÂèñÊ∂àÂ°´ÂØ´" value="ÂèñÊ∂àÂ°´ÂØ´"
+                                                                  onclick="cancel()">
+                                                              </span></div>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                          <td width="5" valign="top"><img src="./Ë°®Ê†ºË£Ω‰Ωú1_files/07_07.gif" width="5"
+                                              height="34"></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><img src="./Ë°®Ê†ºË£Ω‰Ωú1_files/05_25.gif" width="800" height="9"></td>
+                                </tr>
+                                <tr>
+                                  <td height="9"><img src="./Ë°®Ê†ºË£Ω‰Ωú1_files/05_24.gif" width="9" height="9"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                          <td width="9" valign="top"><img src="./Ë°®Ê†ºË£Ω‰Ωú1_files/05_01.gif" width="9" height="5"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                  <td width="16" background="./Ë°®Ê†ºË£Ω‰Ωú1_files/style02_17.gif"><img src="./Ë°®Ê†ºË£Ω‰Ωú1_files/style02_17.gif"
+                      width="16" height="78"></td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="./Ë°®Ê†ºË£Ω‰Ωú1_files/style02_19-g.gif" width="850" height="17"></td>
+        </tr>
+        <tr>
+          <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="10">
+              <tbody>
+                <tr>
+                  <td>
+                    <div align="center">COPYRIGHT &#169; 2005 CHUNGHWA TELECOM CO., LTD.<br>
+                      ÁâàÊ¨äÊâÄÊúâÔºö‰∏≠ËèØÈõª‰ø°ËÇ°‰ªΩÊúâÈôêÂÖ¨Âè∏</div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+  </form>
+</body>
+
+</html>
